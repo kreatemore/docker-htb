@@ -1,0 +1,18 @@
+
+
+Let's get hackin'
+            o
+            o
+     //@@  o
+    @@-OO
+   @@@ ^ @   _____
+  /  \ / \  |\____\
+ /  ( X ) | | |   |
+<___=\      | |   |
+    \======\ \|_"_|
+                (____
+
+Spawn another shell: docker-compose run box
+Web proxy address: 127.0.0.1:3128
+After you're done: docker-compose down
+

@@ -1,0 +1,31 @@
+version: "3"
+services:
+
+  vpn: 
+    build: openvpn_client
+    volumes:
+      - ./openvpn_client:/etc/openvpn
+      - /etc/resolv.conf:/etc/resolv.conf
+    network_mode: host
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+
+  proxy:
+    build: proxy
+    restart: always
+    volumes:
+      - ./proxy:/etc/squid
+    ports:
+      - "3128:3128"
+
+  box:
+    build: box
+    depends_on: 
+      - vpn
+      - proxy
+    volumes:
+      - ./box:/root/
+    hostname: "hacking-whale"
+    tty: true
