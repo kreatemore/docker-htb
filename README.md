@@ -1,8 +1,13 @@
 # Important
-## Please read!
 
-This is a PoC, security was plain ignored. You're probably running
+### Please read uwu
+
+**This is a PoC, security was completely ignored.**
+
+You're probably running
+
 a) a probably very relaxed and maybe even outdated squid proxy to access HTB sites from your host
+
 b) your "box" as root (which is probably great if someone wants to break out of your container)
 
 Any PRs are welcome to tighten security/update stuff, or improvements of any kind!
