@@ -7,6 +7,7 @@ Requirements:
 1. Download your ovpn file from HTB
 2. Place it inside openvpn_client and edit openvpn_client/Dockerfile to reference your ovpn file
 3. `docker-compose run box`
+4. Connect your browser (host) to the web proxy @ 127.0.0.1:3128
 
 # Troubleshooting
 
