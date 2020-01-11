@@ -29,5 +29,7 @@ Requirements:
 # Troubleshooting
 
 `docker ps` to see if all 3 services are running (proxy, vpn, box)
+
 `docker kill -s HUP <id of proxy container>` to restart after a config update
+
 `docker exec -it <id of proxy container> tail -f /var/log/squid/access.log` to see access logs
