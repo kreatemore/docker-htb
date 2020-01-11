@@ -1,3 +1,20 @@
+# Important
+## Please read!
+
+This is a PoC, security was plain ignored. You're probably running
+a) a probably very relaxed and maybe even outdated squid proxy to access HTB sites from your host
+b) your "box" as root (which is probably great if someone wants to break out of your container)
+
+Any PRs are welcome to tighten security/update stuff, or improvements of any kind!
+
+# Notes
+
+Your "box" is comes with the minimum of the minimum (like curl & python3). You will have to use apt to install stuff, and
+the volumes are not persistent yet, so expect loss of data if you stop all instances.
+
+As root, your home folder (/root/) is mounted on your host, you can use that folder to
+pass data between host/container & also what's there is persisted.
+
 # How to run?
 
 Requirements: 
