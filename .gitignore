@@ -1,1 +1,12 @@
+# Don't commit vpn access files
 openvpn_client/*.ovpn
+!openvpn_client/Dockerfile
+
+# Avoid committing random stuff from home folder
+!box/.bashrc
+!box/Dockerfile
+!box/header.txt
+
+# Necessary for proxy
+!proxy/Dockerfile
+!proxy/squid.conf
