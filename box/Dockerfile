@@ -4,7 +4,7 @@ RUN apt update -y && \
     apt upgrade -y && \
     apt install -y \
     curl \
-    dirbuster \
+    dirb \
     nmap \
     python3 \
     python3-dev \
